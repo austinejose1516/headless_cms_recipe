@@ -22,6 +22,12 @@
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        background: linear-gradient(
+            to right bottom,
+            $color-primary-light,
+            $color-primary-dark
+        );
+        color: $color-black;
 
         hr {
             width: 30%;
@@ -32,24 +38,11 @@
         }
     }
     &-front {
-        background: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-        );
-        color: $color-black;
-
         img {
             width: 100%;
         }
     }
     &-back {
-        background: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-        );
-        color: $color-black;
         transform: rotateY(180deg);
         display: flex;
         justify-content: center;
