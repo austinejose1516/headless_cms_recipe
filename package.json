@@ -1,0 +1,17 @@
+{
+    "name": "headless_project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss styles.css -w"
+    },
+    "author": "Austine",
+    "license": "ISC",
+    "dependencies": {
+        "contentful": "^8.1.7"
+    },
+    "devDependencies": {
+        "node-sass": "^5.0.0"
+    }
+}

@@ -1,0 +1,20 @@
+body {
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+.heading-primary {
+    color: $color-black;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+        animation: moveInLeft 1s ease-out;
+    }
+}
