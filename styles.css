@@ -5,13 +5,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background-color: #bdbdbd; }
+
 html {
   font-size: 62.5%; }
 
 body {
   font-family: 'lato', sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
   line-height: 1.7; }
 
 .heading-primary {
@@ -19,11 +20,21 @@ body {
   text-transform: uppercase;
   margin-bottom: 4rem; }
   .heading-primary--main {
-    display: block;
+    text-transform: uppercase;
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 0.5rem;
     animation: moveInLeft 1s ease-out; }
+  .heading-primary__card-title {
+    width: 80%;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 4rem auto 2rem auto; }
+  .heading-primary__card-body {
+    width: 80%;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-top: 15%; }
 
 .header {
   display: flex;
@@ -31,8 +42,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(214, 190, 190, 0.8), rgba(212, 148, 148, 0.8)), url(../../assets/backgroundImage.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 91%, 70% 100%, 30% 100%, 0 90%, 0 0);
-  position: relative; }
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 90%, 0 100%, 0 0); }
   .header__text-box {
     display: flex;
     width: 100%;
@@ -54,7 +64,8 @@ body {
   height: 400px;
   perspective: 1000px;
   border: none;
-  margin: 2%; }
+  margin: 2%;
+  cursor: pointer; }
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -68,20 +79,15 @@ body {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
-  .flip-card-front {
-    background: linear-gradient(to right bottom, #d6bebe, #d49494);
-    color: #181818; }
-    .flip-card-front h1 {
-      width: 80%;
-      font-size: 3rem;
-      line-height: 4rem;
-      margin: 4rem auto 2rem auto; }
-    .flip-card-front hr {
+    .flip-card-front hr, .flip-card-back hr {
       width: 30%;
       height: 3px;
       margin: auto;
       background-color: #181818;
       border: none; }
+  .flip-card-front {
+    background: linear-gradient(to right bottom, #d6bebe, #d49494);
+    color: #181818; }
     .flip-card-front img {
       width: 100%; }
   .flip-card-back {
@@ -89,10 +95,6 @@ body {
     color: #181818;
     transform: rotateY(180deg);
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    .flip-card-back p {
-      width: 80%;
-      font-size: 1.4rem; }
+    justify-content: center; }
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg); }

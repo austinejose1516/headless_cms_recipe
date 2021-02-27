@@ -5,6 +5,7 @@
     perspective: 1000px;
     border: none;
     margin: 2%;
+    cursor: pointer;
 
     &-inner {
         position: relative;
@@ -21,21 +22,6 @@
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-    }
-    &-front {
-        background: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-        );
-        color: $color-black;
-
-        h1 {
-            width: 80%;
-            font-size: 3rem;
-            line-height: 4rem;
-            margin: 4rem auto 2rem auto;
-        }
 
         hr {
             width: 30%;
@@ -44,6 +30,14 @@
             background-color: $color-black;
             border: none;
         }
+    }
+    &-front {
+        background: linear-gradient(
+            to right bottom,
+            $color-primary-light,
+            $color-primary-dark
+        );
+        color: $color-black;
 
         img {
             width: 100%;
@@ -57,15 +51,8 @@
         );
         color: $color-black;
         transform: rotateY(180deg);
-
         display: flex;
         justify-content: center;
-        align-items: center;
-
-        p {
-            width: 80%;
-            font-size: 1.4rem;
-        }
     }
     &:hover &-inner {
         transform: rotateY(180deg);

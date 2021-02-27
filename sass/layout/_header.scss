@@ -9,17 +9,7 @@
         url(../../assets/backgroundImage.jpg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(
-        30% 0%,
-        70% 0%,
-        100% 0,
-        100% 91%,
-        70% 100%,
-        30% 100%,
-        0 90%,
-        0 0
-    );
-    position: relative;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
 
     &__text-box {
         display: flex;
